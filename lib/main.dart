@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Assignment',
+      title: 'Flutter Assignment by Moneesh',
       // theme: ThemeData(fontFamily: 'Poppins'),
       home: MyHomePage(),
     );
