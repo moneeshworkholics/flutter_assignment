@@ -52,7 +52,7 @@ class _ProductListwebState extends State<ProductListweb> {
               margin: EdgeInsets.only(bottom: ScreenUtil().setHeight(5)),
               child: InkWell(
                 onTap: () {
-                  Get.to(const AddProduct());
+                  Get.off(const AddProduct());
                 },
                 child: Image.asset(
                   "assets/images/add.png",
@@ -215,7 +215,7 @@ class _ProductListwebState extends State<ProductListweb> {
                                             if (product.every((element) =>
                                                 element["name"] ==
                                                 product[index]["name"])) {
-                                              Get.to(EditProduct(
+                                              Get.off(EditProduct(
                                                   name: product[index]['name'],
                                                   // launchedat: date,
                                                   launchSite: product[index]
@@ -393,7 +393,7 @@ class _ProductListwebState extends State<ProductListweb> {
                                             if (product.every((element) =>
                                                 element["name"] ==
                                                 el["name"])) {
-                                              Get.to(EditProduct(
+                                              Get.off(EditProduct(
                                                   name: el['name'],
                                                   // launchedat: date,
                                                   launchSite: el['launchSite'],

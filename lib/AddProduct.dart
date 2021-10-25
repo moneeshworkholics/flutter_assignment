@@ -364,7 +364,7 @@ class _AddProductState extends State<AddProduct> {
                             name.clear();
                             launchsite.clear();
                             popularity.clear();
-                            Get.to(MyHomePage());
+                            Get.off(MyHomePage());
                           });
                         } else if (_formKey.currentState!.validate()) {
                           debugPrint("$product");

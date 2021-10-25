@@ -35,7 +35,7 @@ class _ProductListState extends State<ProductList> {
               margin: EdgeInsets.only(bottom: ScreenUtil().setHeight(5)),
               child: InkWell(
                 onTap: () {
-                  Get.to(const AddProduct());
+                  Get.off(const AddProduct());
                 },
                 child: Image.asset(
                   "assets/images/add.png",
@@ -190,7 +190,7 @@ class _ProductListState extends State<ProductList> {
                                         if (product.every((element) =>
                                             element["name"] ==
                                             product[index]["name"])) {
-                                          Get.to(EditProduct(
+                                          Get.off(EditProduct(
                                               name: product[index]['name'],
                                               // launchedat: date,
                                               launchSite: product[index]

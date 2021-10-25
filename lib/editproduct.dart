@@ -384,7 +384,7 @@ class _EditProductState extends State<EditProduct> {
                             name.clear();
                             launchsite.clear();
                             popularity.clear();
-                            Get.to(MyHomePage());
+                            Get.off(MyHomePage());
                           });
                         } else if (_formKey.currentState!.validate()) {
                           debugPrint("$product");
